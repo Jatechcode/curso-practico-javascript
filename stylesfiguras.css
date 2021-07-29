@@ -1,0 +1,94 @@
+body {
+    background-color: #E1E5EA;
+    margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.header {
+    align-items: center;
+    background-color: #E1E5EA;
+    color:#DA7F8F;
+    font-size: 30px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+}
+.Subtitle {
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.Triangulo {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+.Triangulo__container {
+    background-color: #FAF3F3;
+    width: 250px;
+    height: 150 px;
+    border-radius: 25px;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Triangulo__container--form {
+    width: 100%;
+    max width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Triangulo__container--form label {
+    font-size: 14px;
+}
+.inputt {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 30px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    outline: none;
+    height: 30px;
+}
+::placeholder{
+    color: grey;
+    font-style: italic;
+}
+.button {
+background-color:#A7BBC7;
+border: solid;
+border-radius: 30px;
+color: white;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+font-family: 'Noto Sans JP', sans-serif;
+height: 50px;
+letter-spacing: 2px;
+margin: 10px 0px;
+margin-top: 20px;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 800px;
+    align-content: space-between;
+  }

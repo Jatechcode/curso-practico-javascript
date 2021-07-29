@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso Práctico de Javascript </title>
+    <link rel="stylesheet" href="./stylesfiguras.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="./Media/Header_icon.png" alt="">
+        <h1>
+            Figuras Geométricas
+        </h1>
+    </header>
+        <p class ="Subtitle">
+            Este es tu asistente matemático para calcular perímetros y áreas
+        </p>
+        <div class="box">
+            <section class="Triangulo">
+                <div class="Triangulo__container">
+                    <h2 class="Triangulo__container__tittle">Calcula el área y el perímetro de un Cuadrado</h2>
+                    <form class="Triangulo__container--form">
+                        <label for="InputCuadrado">
+                            Escribe cuanto mide cada lado de tu cuadrado
+                        </label>
+                        <input class="inputt" id="InputCuadrado" type="number" placeholder="Lado del cuadrado"/>
+                        <button class="button" type="button" onclick="calcularperimetrocuadrado()">
+                            Calcular el perímetro
+                        </button>
+                        <button class="button" type="button" onclick="calcularareacuadrado()">
+                            Calcular el Área
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="Triangulo">
+            <div class="Triangulo__container">
+                <h2>Calcula el área y el perímetro de un Tríangulo</h2>
+                <form class="Triangulo__container--form">
+                    <label for="InputLado1">
+                        Escribe cuanto mide el lado 1 de tu tríangulo:
+                    </label>
+                    <input class="inputt"  id="InputLado1" type="number" placeholder="Lado 1 del Tríangulo"/>
+                    <label for="InputLado2">
+                        Escribe cuanto mide el lado 2 de tu tríangulo:
+                    </label>
+                    <input class="inputt"  id="InputLado2" type="number" placeholder="Lado 2 del Tríangulo"/>
+                    <label for="Inputbase">
+                        Escribe cuanto mide la base de tu tríangulo:
+                    </label>
+                    <input class="inputt"  id="Inputbase" type="number" placeholder="Base del Tríangulo"/>
+                    <button class="button" type="button" onclick="calcularperimetrotriangulo()">
+                        Calcular el perímetro
+                    </button>
+                    <button class="button" type="button" onclick="calcularareatriangulo()">
+                        Calcular el Área
+                    </button>
+                </form>
+            </div>
+            </section>
+        
+            <section class="Triangulo">
+            <div class="Triangulo__container">
+                <h2>Calcula el área y el perímetro de un Círculo</h2>
+                <form class="Triangulo__container--form">
+                    <label for="InputCirculo">
+                        Escribe cuanto mide el radio de tu círculo:
+                    </label>
+                    <input class="inputt" id="InputCirculo" type="number" placeholder="Radio del Círculo"/>
+                    <button class="button" type="button" onclick="calcularperimetrocirculo()">
+                        Calcular el perímetro
+                    </button>
+                    <button class="button" type="button" onclick="calcularareacirculo()">
+                        Calcular el Área
+                    </button>
+                </form>
+            </div>
+            </section>
+        </div>
+
+        <section class="Triangulo">
+            <div class="Triangulo__container">
+                <h2>Calcula la Altura de un tríangulo Isoceles con el Teorema de Pitagoras</h2>
+                <form class="Triangulo__container--form">
+                    <label for="InputLadoA">
+                        Escribe cuanto mide el lado A de tu tríangulo:
+                    </label>
+                    <input class="inputt"  id="InputLadoA" type="number" placeholder="Lado A del Tríangulo"/>
+                    <label for="InputLadoB">
+                        Escribe cuanto mide el lado B de tu tríangulo:
+                    </label>
+                    <input class="inputt"  id="InputLadoB"" type="number" placeholder="Lado B del Tríangulo"/>
+                    <label for="InpuLadoBase">
+                        Escribe cuanto mide la base de tu tríangulo:
+                    </label>
+                    <input class="inputt"  id="InpuLadoBase" type="number" placeholder="Base del Tríangulo"/>
+                    <button class="button" type="button" onclick="alturaIsoceles()">
+                        Calcular la Altura
+                    </button>
+                </form>
+            </div>
+        </section>
+    <script src="./figuras.js"></script>
+</body>
+</html>
